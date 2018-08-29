@@ -7,9 +7,15 @@ class database():
       self.database = []
       self.node = []
       self.TxMessage = []
+      self.TxMessageID = []
+      self.TxMessageWithID = []
+      self.TxMessageToID = {}
       self.TxMessageIndex = []
       self.TxMessageSignal = []
       self.RxMessage = []
+      self.RxMessageID = []
+      self.RxMessageWithID = []
+      self.RxMessageToID = {}
       self.RxMessageIndex = []
       self.RxMessageSignal = []
 

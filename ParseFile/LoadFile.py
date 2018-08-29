@@ -27,6 +27,7 @@ def LoadDatabase():
 
    RxMessageObject = []
    NoneTxMessage = []
+   NoneTxMessageID= []
    ListTemp = []
    MessageFound =False
    TxMessageFound = False
@@ -74,17 +75,35 @@ def LoadDatabase():
             '''Find climate node related Tx message'''
             if line.split()[4] == "HVAC_RCCM":
                TxMessageFound = True
+               '''Get Message message ID'''
+               temp = line.split()[2]
+               temp = list(temp)
+               del temp[-1]
+               temp = ''.join(temp) +'(' + str(hex(int(line.split()[1]))).upper() +  ')'
+               db().TxMessageID.append(str(hex(int(line.split()[1]))).upper())
+               db().TxMessageWithID.append(temp)
+               '''Get Normal Message name'''
                db().TxMessageSignal.append(line.split()[2])
                db().TxMessageIndex.append(db().TxMessageSignal.index(line.split()[2]))
 
             else:
                NoneTxMessage.append(line.split()[2])
+               NoneTxMessageID.append(line.split()[1])
+
       else:
          TxMessageFound = False
          MessageFound = False
 
       if MessageFound == False:
          if len(ListTemp):
+            '''Get Message message ID'''
+            temp = NoneTxMessage[-1]
+            temp = list(temp)
+            del temp[-1]
+            temp = ''.join(temp) +'(' + str(hex(int(NoneTxMessageID[-1]))).upper() +  ')'
+            db().RxMessageWithID.append(temp)
+            db().RxMessageID.append(str(hex(int(NoneTxMessageID[-1]))).upper())
+            '''Get Normal Message name'''
             db().RxMessageSignal.append(NoneTxMessage[-1])
             db().RxMessageIndex.append(db().RxMessageSignal.index(NoneTxMessage[-1]))
             ListTemp.clear()         
@@ -109,16 +128,19 @@ def HandleHVAC_RCCM():
    GetTxMessageName()
    #db().RxMessageSignal.reverse()
    GetRxMessageName()
+   db().TxMessageToID = dict(zip(db().TxMessage, db().TxMessageID))
+   db().RxMessageToID = dict(zip(db().RxMessage, db().RxMessageID))
 
 def GetTxMessageName():
    for i in db().TxMessageIndex:
-      #temp = db().TxMessageSignal[i]
-      #temp = list(temp)
       temp = list(db().TxMessageSignal[i])
       del temp[-1]
       temp = ''.join(temp)
       db().TxMessageSignal[i] = ''.join(temp)
       db().TxMessage.append(temp)
+
+
+
 
 def GetRxMessageName():
    for i in db().RxMessageIndex:
@@ -141,9 +163,17 @@ def CreateXml():
    '''
    for i in db().TxMessage:
       Message = ET.SubElement(node_HVAC_RCCM_Tx, "MsgName")
-      Message.tag = i
+      Message.tag = i 
       #print(db().TxMessage)
       k = db().TxMessageSignal.index(i)
+
+      temp = {}
+      index = db().TxMessage.index(i)
+      temp[db().TxMessage[index]] = db().TxMessageID[index]
+      
+      Message.attrib = temp
+      #Message.tail = db().TxMessageToID[i]
+      
       
       if k != db().TxMessageIndex[-1]:
          j=int(k)
@@ -176,7 +206,12 @@ def CreateXml():
       Message.tag = i
       #print(db().TxMessage)
       k = db().RxMessageSignal.index(i)
+
+      temp = {}
+      index = db().RxMessage.index(i)
+      temp[db().RxMessage[index]] = db().RxMessageID[index]
       
+      Message.attrib = temp
      # print(db().RxMessageIndex)
      # print(i)
 
@@ -233,5 +268,4 @@ if __name__ == '__main__':
    HandleHVAC_RCCM()
    root = CreateXml()
    out_xml(root)
-   #for i in db().RxMessageIndex:
-   #   print(db().RxMessageSignal[i])
+
