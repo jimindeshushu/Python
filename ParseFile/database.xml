@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+ <HVAC_RCCM>
+  <TxMessages>
+   <Clmt_Button_Stat7 Dir="Tx" MessageID="0X36D">
+    <SigName>AAR_Btn_Stt</SigName>
+    <SigName>Heat_Btn_Stt</SigName>
+   </Clmt_Button_Stat7>
+   <ParticulateMatterData1 Dir="Tx" MessageID="0X373">
+    <SigName>PmCabn10Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn08Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn06Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn04Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn02Mnte_Conc_Actl</SigName>
+   </ParticulateMatterData1>
+   <ParticulateMatterData2 Dir="Tx" MessageID="0X374">
+    <SigName>PmSnsCabn_D_Stat</SigName>
+    <SigName>PmCabn_Conc_Actl</SigName>
+    <SigName>PmCabn20Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn18Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn16Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn14Mnte_Conc_Actl</SigName>
+    <SigName>PmCabn12Mnte_Conc_Actl</SigName>
+   </ParticulateMatterData2>
+   <TesterPhysicalResHVAC_RCCM Dir="Tx" MessageID="0X73B">
+    <SigName>TesterPhysicalResHVAC_RCCM</SigName>
+   </TesterPhysicalResHVAC_RCCM>
+   <HVAC_AutoSar_Network_Mgmt Dir="Tx" MessageID="0X583">
+    <SigName>HVAC_GWOnBoardTester</SigName>
+    <SigName>HVAC_GWNMProxy</SigName>
+    <SigName>HVAC_AutoSarNMReserved4</SigName>
+    <SigName>HVAC_AutoSarNMReserved3</SigName>
+    <SigName>HVAC_AutoSarNMReserved2</SigName>
+    <SigName>HVAC_AutoSarNMReserved</SigName>
+    <SigName>HVAC_AutoSarNMNodeId</SigName>
+    <SigName>HVAC_AutoSarNMControl</SigName>
+   </HVAC_AutoSar_Network_Mgmt>
+   <Compressor_Req Dir="Tx" MessageID="0X326">
+    <SigName>SnowPlowMde_B_Enbl</SigName>
+    <SigName>ClimtHeat_D_Rq</SigName>
+    <SigName>ClimtCool_D_Rq</SigName>
+    <SigName>HvacEvap_Te_Rq</SigName>
+    <SigName>HvacEvap_Te_Actl</SigName>
+    <SigName>HvacAirCond_B_Rq</SigName>
+    <SigName>HvacEvap_Te_Offst</SigName>
+   </Compressor_Req>
+   <Clmt_Button_Stat2 Dir="Tx" MessageID="0X356">
+    <SigName>CC_Fr_Stat_User_Adj</SigName>
+    <SigName>Front_Blower_Indicate</SigName>
+    <SigName>CC_Diagnostics_Active</SigName>
+    <SigName>RHS_Temp_Display_Digit3</SigName>
+    <SigName>RHS_Temp_Display_Digit2</SigName>
+    <SigName>RHS_Temp_Display_Digit1</SigName>
+    <SigName>LHS_Temp_Display_Digit3</SigName>
+    <SigName>LHS_Temp_Display_Digit2</SigName>
+    <SigName>LHS_Temp_Display_Digit1</SigName>
+    <SigName>EATC_RHS_Units</SigName>
+    <SigName>EATC_LHS_Units</SigName>
+   </Clmt_Button_Stat2>
+   <Climate_Control_Data Dir="Tx" MessageID="0X41A">
+    <SigName>SteWhlHeat_D_Rq</SigName>
+    <SigName>MirrorHeatOn_B_Rq</SigName>
+    <SigName>Remote_Start_QuietMode</SigName>
+    <SigName>Outside_Air_Temp_Stat</SigName>
+   </Climate_Control_Data>
+   <ClmtCtrlSeatSet_Cmd Dir="Tx" MessageID="0X124">
+    <SigName>ClmtCtrlSeat_SetCmd_Psgr</SigName>
+    <SigName>ClmtCtrlSeat_SetCmd_Dvr</SigName>
+   </ClmtCtrlSeatSet_Cmd>
+   <Personality_HVAC_Data Dir="Tx" MessageID="0X3E7">
+    <SigName>FeatNoFcimActl</SigName>
+    <SigName>FeatConfigFcimActl</SigName>
+    <SigName>PersIndexFcim_D_Actl</SigName>
+   </Personality_HVAC_Data>
+   <Climate_Control_Data_2 Dir="Tx" MessageID="0X35E">
+    <SigName>HvacBlwrFront_D_Stat</SigName>
+    <SigName>ClimtThrmlLoad_No_Actl</SigName>
+    <SigName>HvacRec_Pc_Est</SigName>
+    <SigName>HvacAir_Flw_Est</SigName>
+    <SigName>CabnAmb_Te_Actl</SigName>
+   </Climate_Control_Data_2>
+   <Clmt_Button_Stat1 Dir="Tx" MessageID="0X355">
+    <SigName>MdeMnu_Buttn_Stat</SigName>
+    <SigName>Front_AUTO_Blwr_Lvl</SigName>
+    <SigName>RearMnu_Buttn_Stat</SigName>
+    <SigName>FrontMnu_Buttn_Stat</SigName>
+    <SigName>RHS_Cond_Seat_Status</SigName>
+    <SigName>LHS_Cond_Seat_Status</SigName>
+    <SigName>Htd_Strg_Whl_Status</SigName>
+    <SigName>Htd_Strg_Whl_Btn_Stt</SigName>
+    <SigName>Defrost_Btn_Stt</SigName>
+    <SigName>CC_Fr_Btn_User_Adj</SigName>
+    <SigName>RHS_Htd_Seat_Btn_Stt</SigName>
+    <SigName>RHS_Cld_Seat_Btn_Stt</SigName>
+    <SigName>Outside_Btn_Stt</SigName>
+    <SigName>LHS_Htd_Seat_Btn_Stt</SigName>
+    <SigName>LHS_Cld_Seat_Btn_Stt</SigName>
+    <SigName>Htd_Frt_Wsh_Btn_Stt</SigName>
+    <SigName>Auto_Recirc_Btn_Stt</SigName>
+    <SigName>Recirc_Btn_Stt</SigName>
+    <SigName>Rear_Defrost_Btn_Stt</SigName>
+    <SigName>My_Temp_Btn_Stt</SigName>
+    <SigName>Max_Defrost_Btn_Stt</SigName>
+    <SigName>Max_AC_Btn_Stt</SigName>
+    <SigName>Front_AUTO_Label</SigName>
+    <SigName>Windscreen_Btn_Stt</SigName>
+    <SigName>Panel_Btn_Stt</SigName>
+    <SigName>Front_Power_Btn_Stt</SigName>
+    <SigName>Front_AUTO_Btn_Stt</SigName>
+    <SigName>Floor_Btn_Stt</SigName>
+    <SigName>Dual_Button_Stt</SigName>
+    <SigName>AC_Btn_Stt</SigName>
+   </Clmt_Button_Stat1>
+  </TxMessages>
+  <RxMessages>
+   <Battery_Mgmt_3_MS1 Dir="Rx" MessageID="0X31C">
+    <SigName>BSBattSOC</SigName>
+    <SigName>BattULo2_Te_Actl</SigName>
+    <SigName>BSFault</SigName>
+    <SigName>BattULoState_D_Qlty</SigName>
+   </Battery_Mgmt_3_MS1>
+   <TRM_Network_MgmtM Dir="Rx" MessageID="0X554">
+    <SigName>TRM_Network_Mgmt</SigName>
+   </TRM_Network_MgmtM>
+   <RTM_Network_MgmtM Dir="Rx" MessageID="0X53B">
+    <SigName>RTM_Network_Mgmt</SigName>
+   </RTM_Network_MgmtM>
+   <GWM_AutoSar_NetMgmt_MS1 Dir="Rx" MessageID="0X59E">
+    <SigName>GWM_AutoSarNMControl</SigName>
+    <SigName>GWM_AutoSarNMNodeId</SigName>
+    <SigName>GWM_AutoSarNMReserved1</SigName>
+    <SigName>GWM_AutoSarNMReserved2</SigName>
+    <SigName>GWM_AutoSarNMReserved3</SigName>
+    <SigName>GWM_AutoSarNMReserved4</SigName>
+    <SigName>GWM_GWNMProxy</SigName>
+    <SigName>GWM_GWOnBoardTester</SigName>
+   </GWM_AutoSar_NetMgmt_MS1>
+   <GatewayData2_MS1 Dir="Rx" MessageID="0X437">
+    <SigName>HybMdeStat_D_Dsply</SigName>
+    <SigName>HybMdeStat_D_Dsply_UB</SigName>
+   </GatewayData2_MS1>
+   <Body_Info_7_MS1 Dir="Rx" MessageID="0X3B1">
+    <SigName>KeyOffMde_D_Actl</SigName>
+   </Body_Info_7_MS1>
+   <BodyGatewayData_2 Dir="Rx" MessageID="0X3BE">
+    <SigName>OdometerMasterValue</SigName>
+    <SigName>OdometerMasterValue_UB</SigName>
+    <SigName>EngOff_T_Actl_UB</SigName>
+    <SigName>EngOff_T_Actl</SigName>
+    <SigName>ElCmprOverTe_D_Stat_UB</SigName>
+    <SigName>ElCmprOverTe_D_Stat</SigName>
+   </BodyGatewayData_2>
+   <GatewayData_MS1 Dir="Rx" MessageID="0X2FD">
+    <SigName>Voice_Blower_Limit</SigName>
+    <SigName>Voice_Blower_Limit_UB</SigName>
+    <SigName>PsngrFrntDetct_D_Actl</SigName>
+    <SigName>PsngrFrntDetct_D_Actl_UB</SigName>
+    <SigName>Mc_VehUnitTempUsrSel_St</SigName>
+    <SigName>Mc_VehUnitTempUsrSel_St_UB</SigName>
+    <SigName>Diagnostic_Operation_Rq</SigName>
+    <SigName>Diagnostic_Operation_Rq_UB</SigName>
+   </GatewayData_MS1>
+   <VehicleOperatingModes_MS1 Dir="Rx" MessageID="0X167">
+    <SigName>ElPw_D_Stat</SigName>
+    <SigName>Eng_D_Stat</SigName>
+    <SigName>PwPckTq_D_Stat</SigName>
+   </VehicleOperatingModes_MS1>
+   <Personality_BCM2_Data_MS1 Dir="Rx" MessageID="0X3EB">
+    <SigName>PersNo_D_Actl</SigName>
+    <SigName>RecallEvent_No_Cnt</SigName>
+    <SigName>PersSetup_No_Actl</SigName>
+    <SigName>PersSetupAccessCtrl</SigName>
+    <SigName>PersSetupRestr_D_Actl</SigName>
+   </Personality_BCM2_Data_MS1>
+   <Locking_Systems_2_MS1 Dir="Rx" MessageID="0X331">
+    <SigName>Veh_Lock_Status</SigName>
+    <SigName>Veh_Lock_EvNum</SigName>
+    <SigName>Veh_Lock_Requestor</SigName>
+   </Locking_Systems_2_MS1>
+   <GWM_Network_MgmtM_MS1 Dir="Rx" MessageID="0X51E">
+    <SigName>GWM_Network_Mgmt_MS1</SigName>
+   </GWM_Network_MgmtM_MS1>
+   <BattPwr_Data_MS1 Dir="Rx" MessageID="0X42A">
+    <SigName>PwSrcULo_I_Actl_UB</SigName>
+    <SigName>PwSrcULo_I_Mx_UB</SigName>
+    <SigName>PwSrcULo_I_Actl</SigName>
+    <SigName>PwSrcULo_I_Mx</SigName>
+    <SigName>BattULo_U_Actl</SigName>
+    <SigName>BattULo_U_Actl_UB</SigName>
+   </BattPwr_Data_MS1>
+   <Personality_APIM_Data_MS1 Dir="Rx" MessageID="0X3E2">
+    <SigName>CtrStkDsplyOp_D_Rq</SigName>
+    <SigName>CtrStkFeatConfigActl</SigName>
+    <SigName>CtrStkFeatNoActl</SigName>
+    <SigName>CtrStkPersIndex_D_Actl</SigName>
+   </Personality_APIM_Data_MS1>
+   <EngineClimateData_MS1 Dir="Rx" MessageID="0X178">
+    <SigName>AirAmb_Te_Actl</SigName>
+    <SigName>AirAmb_Te_ActlFilt</SigName>
+    <SigName>AirAmbTe_D_Qf</SigName>
+    <SigName>HvacHtrCore2_Te_Actl</SigName>
+   </EngineClimateData_MS1>
+   <Batt_Mgmt_Data_MS1 Dir="Rx" MessageID="0X42C">
+    <SigName>AirCondClutch_B_Stats</SigName>
+    <SigName>AirCondFluidHi_P_Actl</SigName>
+    <SigName>AirCondRec_B_Rq</SigName>
+    <SigName>AirCondClutch_B_Stats_UB</SigName>
+    <SigName>AirCondFluidHi_P_Actl_UB</SigName>
+    <SigName>AirCondRec_B_Rq_UB</SigName>
+    <SigName>Shed_Drain_Eng_Off_B</SigName>
+    <SigName>Shed_Drain_Eng_Off_B_UB</SigName>
+    <SigName>Shed_Feature_Group_ID</SigName>
+    <SigName>Shed_Feature_Group_ID_UB</SigName>
+    <SigName>Shed_Level_Req</SigName>
+    <SigName>Shed_Level_Req_UB</SigName>
+    <SigName>Shed_T_Eng_Off_B</SigName>
+    <SigName>Shed_T_Eng_Off_B_UB</SigName>
+    <SigName>Batt_Crit_SoC_B</SigName>
+    <SigName>Batt_Crit_SoC_B_UB</SigName>
+    <SigName>Batt_Lo_SoC_B</SigName>
+    <SigName>Batt_Lo_SoC_B_UB</SigName>
+    <SigName>HvacAirFullOut_B_Rq</SigName>
+    <SigName>HvacAirFullOut_B_Rq_UB</SigName>
+   </Batt_Mgmt_Data_MS1>
+   <BodyInfo_MS1 Dir="Rx" MessageID="0X3C4">
+    <SigName>WiprFront_D_Stat</SigName>
+    <SigName>WiprFront_D_Stat_UB</SigName>
+    <SigName>OCSSensrDataLowerLim</SigName>
+    <SigName>OCSSensrDataLowerLim_UB</SigName>
+    <SigName>OCSSensrDataUpperLim</SigName>
+    <SigName>OCSSensrDataUpperLim_UB</SigName>
+    <SigName>EngClnt_Te_Actl_UB</SigName>
+    <SigName>MetricActv_B_Actl_UB</SigName>
+    <SigName>EngClnt_Te_Actl</SigName>
+    <SigName>MetricActv_B_Actl</SigName>
+    <SigName>EngClntTe_D_Qf</SigName>
+    <SigName>MetricActvTe_B_Actl</SigName>
+    <SigName>MetricActvTe_B_Actl_UB</SigName>
+   </BodyInfo_MS1>
+   <TesterFunctionalReq_M1 Dir="Rx" MessageID="0X7DF">
+    <SigName>TesterFunctionalReq</SigName>
+   </TesterFunctionalReq_M1>
+   <Clmt_Button_Stat5_MS1 Dir="Rx" MessageID="0X359">
+    <SigName>EATC_LHS_Unit</SigName>
+    <SigName>Front_Blower_Ind</SigName>
+    <SigName>LHS_Temp_Disp_Digit1</SigName>
+    <SigName>LHS_Temp_Disp_Digit2</SigName>
+    <SigName>LHS_Temp_Disp_Digit3</SigName>
+   </Clmt_Button_Stat5_MS1>
+   <Clmt_Button_Stat4_MS1 Dir="Rx" MessageID="0X358">
+    <SigName>Drv_Set_Temp</SigName>
+    <SigName>Frt_Blower_Speed</SigName>
+    <SigName>Frt_Btn_Status_1st</SigName>
+    <SigName>Frt_Btn_Status_2nd</SigName>
+   </Clmt_Button_Stat4_MS1>
+   <EngineData_2_MS1 Dir="Rx" MessageID="0X42E">
+    <SigName>Veh_V_ActlEng</SigName>
+    <SigName>Veh_V_ActlEng_UB</SigName>
+    <SigName>VehVActlEng_D_Qf</SigName>
+    <SigName>EngAout_N_Actl</SigName>
+    <SigName>EngAout_N_Actl_UB</SigName>
+    <SigName>EngAirIn_Te_Actl</SigName>
+    <SigName>RstrnImpactEvntStatus</SigName>
+    <SigName>EngAirIn_Te_Actl_UB</SigName>
+    <SigName>RstrnImpactEvntStatus_UB</SigName>
+    <SigName>CoolantFanStepAct</SigName>
+    <SigName>CoolantFanStepAct_UB</SigName>
+   </EngineData_2_MS1>
+   <BodyInfo_3_MS1 Dir="Rx" MessageID="0X3B3">
+    <SigName>FuelPmpInhbt_B_Stat</SigName>
+    <SigName>CrashEvnt_D_Stat</SigName>
+    <SigName>LifeCycMde_D_Actl</SigName>
+    <SigName>DrStatPsngr_B_Actl</SigName>
+    <SigName>DrStatRl_B_Actl</SigName>
+    <SigName>DrStatRr_B_Actl</SigName>
+    <SigName>Remote_Start_Status</SigName>
+    <SigName>Day_Night_Status</SigName>
+    <SigName>Dimming_Lvl</SigName>
+    <SigName>Ignition_Status</SigName>
+    <SigName>Litval</SigName>
+    <SigName>Parklamp_Status</SigName>
+    <SigName>Backlit_LED_Status</SigName>
+   </BodyInfo_3_MS1>
+   <Personality_Data_MS1 Dir="Rx" MessageID="0X3E0">
+    <SigName>MsgCntrDsplyOp_D_Rq</SigName>
+    <SigName>MsgCntrFeatNoRq</SigName>
+    <SigName>MsgCntrFeatConfigRq</SigName>
+    <SigName>MsgCntrPersIndex_D_Rq</SigName>
+   </Personality_Data_MS1>
+   <Pass_Window_Stat Dir="Rx" MessageID="0X33C">
+    <SigName>PassWindowPosition</SigName>
+    <SigName>RearPassWindowPos</SigName>
+   </Pass_Window_Stat>
+   <GGCC_Config_Mgmt_ID_1_MS1 Dir="Rx" MessageID="0X40A">
+    <SigName>VehicleGGCCData</SigName>
+   </GGCC_Config_Mgmt_ID_1_MS1>
+   <EngineData_1_MS1 Dir="Rx" MessageID="0X3BC">
+    <SigName>ApedPos_Pc_ActlArb_UB</SigName>
+    <SigName>ApedPos_Pc_ActlArb</SigName>
+    <SigName>PwSrcULoFalt_D_Stat</SigName>
+    <SigName>PwSrcULo_Pc_Mx</SigName>
+    <SigName>PwSrcULo_Pc_Mx_UB</SigName>
+    <SigName>PwSrcULoFalt_D_Stat_UB</SigName>
+   </EngineData_1_MS1>
+   <Pass_Mirror_Sw_StatM Dir="Rx" MessageID="0X33F">
+    <SigName>DriverWindowPosition</SigName>
+    <SigName>RearDriverWindowPos</SigName>
+   </Pass_Mirror_Sw_StatM>
+  </RxMessages>
+ </HVAC_RCCM>
+</Database>
