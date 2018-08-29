@@ -169,7 +169,9 @@ def CreateXml():
 
       temp = {}
       index = db().TxMessage.index(i)
-      temp[db().TxMessage[index]] = db().TxMessageID[index]
+      #temp[db().TxMessage[index]] = db().TxMessageID[index]
+      temp["MessageID"] = db().TxMessageID[index]
+      temp["Dir"] = "Tx"
       
       Message.attrib = temp
       #Message.tail = db().TxMessageToID[i]
@@ -209,7 +211,9 @@ def CreateXml():
 
       temp = {}
       index = db().RxMessage.index(i)
-      temp[db().RxMessage[index]] = db().RxMessageID[index]
+      #temp[db().RxMessage[index]] = db().RxMessageID[index]
+      temp["MessageID"] = db().RxMessageID[index]
+      temp["Dir"] = "Rx"
       
       Message.attrib = temp
      # print(db().RxMessageIndex)
